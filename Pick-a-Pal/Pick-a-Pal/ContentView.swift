@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Pick-a-Poll
+//  Pick-a-Pal
 //
 //  Created by Serhii Malyshko on 28.03.2026.
 //
@@ -19,7 +19,7 @@ struct ContentView: View {
                 Image(systemName: "person.3.sequence.fill")
                     .foregroundStyle(.tint)
                     .symbolRenderingMode(.hierarchical)
-                Text("Pick-a-Pall")
+                Text("Pick-a-Pal")
             }
             .font(.title)
             .bold()
