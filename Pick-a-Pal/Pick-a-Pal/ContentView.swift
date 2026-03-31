@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var names: [String] = []
+    @State private var names: [String] = ["Alex S.", "Alex"]
     @State private var nameToAdd = ""
     @State private var pickedName = ""
     @State private var shouldRemovePickedName = false
@@ -39,7 +39,7 @@ struct ContentView: View {
                 .autocorrectionDisabled()
                 .onSubmit {
                     if !nameToAdd.isEmpty {
-                        names.append(nameToAdd)
+                        names.append(nameToAdd.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines))
                         nameToAdd = ""
                     }
                 }
@@ -53,6 +53,7 @@ struct ContentView: View {
                     pickedName = randomName
                     
                     if shouldRemovePickedName {
+                        
                         names.removeAll { name in
                             return (name == randomName)
                         }
