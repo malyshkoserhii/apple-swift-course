@@ -1,10 +1,3 @@
-//
-//  ScoreKeeperApp.swift
-//  ScoreKeeper
-//
-//  Created by Serhii Malyshko on 31.03.2026.
-//
-
 import SwiftUI
 
 @main
